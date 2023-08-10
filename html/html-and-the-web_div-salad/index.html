@@ -14,60 +14,60 @@ Let's fix this mess!
 
   <!-- Added body tag -->
   <body>
-    <div>
-      <div>
-        <div>Jane Doe</div>
+    <header>
+      <h1 style="text-align: center">Jane Doe's Page</h1>
 
-        <!-- nav tag added -->
-        <nav id="nav">
-          <div>About Me</div>
-          <div>Contact</div>
-          <div>Skillset</div>
-        </nav>
-      </div>
-      <!-- main tag added -->
-      <main>
-        <main id="about-me">
-          <div>About me</div>
-          <div>
-            Hi there! Welcome to my personal website. Here is gathered the most
-            important information about me. If you want to work with me or get
-            to know me, please don't hesitate to get in contact.
-          </div>
-          <!-- figure and figurecuption was added -->
-          <figure>
-            <img
-              src="https://source.unsplash.com/random/400x300?fruit"
-              alt="a random picture"
-            />
-            <figcaption>
-              A random picture, because I would like to maintain my privacy and
-              let my code speak for me, instead of images.
-            </figcaption>
-          </figure>
-        </main>
+      <!-- nav tag added -->
+      <nav id="nav" style="background-color: black">
+        <ul style="color: white">
+          <li>About Me</li>
+          <li>Contact</li>
+          <li>Skillset</li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main tag added -->
+    <main>
+      <section>
+        <h2 id="about-me">About me</h2>
+        <p>
+          Hi there! Welcome to my personal website. Here is gathered the most
+          important information about me. If you want to work with me or get to
+          know me, please don't hesitate to get in contact.
+        </p>
+        <!-- figure and figurecuption was added -->
+        <figure>
+          <img
+            src="https://source.unsplash.com/random/400x300?fruit"
+            alt="a random picture"
+          />
+          <figcaption>
+            A random picture, because I would like to maintain my privacy and
+            let my code speak for me, instead of images.
+          </figcaption>
+        </figure>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <!-- anchor link was added -->
+        <a href="https://github.com/neuefische">GitHub</a>
+        <a href="https://de.linkedin.com/">LinkedIn</a>
+        <a href="https://codesandbox.io/">CodeSandbox</a>
+      </section>
 
-        <div id="contact">
-          <div>Contact</div>
-          <!-- anchor link was added -->
-          <a href="https://github.com/neuefische">GitHub</a>
-          <a href="https://de.linkedin.com/">LinkedIn</a>
-          <a href="https://codesandbox.io/">CodeSandbox</a>
-        </div>
-
-        <div id="skills">
-          <div>Skillset</div>
-          <!-- ul and li tags added -->
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Painting rainbows</li>
-            <li>Party</li>
-          </ul>
-        </div>
-      </main>
-    </div>
+      <section id="skills">
+        <h2>Skillset</h2>
+        <!-- ul and li tags added -->
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Painting rainbows</li>
+          <li>Party</li>
+        </ul>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>
