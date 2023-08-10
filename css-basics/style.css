@@ -1,0 +1,22 @@
+* {
+  background-color: blanchedalmond;
+}
+
+#nav {
+  color: blue;
+}
+
+#about-me {
+  background-color: aqua;
+  /* height: 20px; */
+  border-bottom: 3px dotted greenyellow;
+}
+
+.link {
+  background-color: rgb(red, green, blue);
+  color: purple;
+}
+
+a {
+  color: black;
+}
