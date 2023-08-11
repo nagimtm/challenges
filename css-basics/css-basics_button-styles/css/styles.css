@@ -27,22 +27,31 @@ button {
 
 /* Your exercise starts here */
 
-/* Add your CSS styles below this line. Feel free to replace the comments with your code. Make sure not to put your code into the comments, because then nothing will happen. */
+/* Add your CSS styles below this line. Feel free to replace the comments with your code. 
+Make sure not to put your code into the comments, because then nothing will happen. */
 
 .button1 {
   /*Style me! Change my border, set a border radius or what you want to try out. :) */
+  border: 2px solid red;
+  border-radius: 3px;
 }
 
 .button2 {
-  /*Style me! Change my color, or my background-color. Or both! You can test out different color modes here - like HEX, RGB, ... */
+  /*Style me! Change my color, or my background-color. Or both! 
+  You can test out different color modes here - like HEX, RGB, ... */
+  background-color: violet;
 }
 
 .button3 {
   /*Style me! You can test out changing the font, or font size, ...*/
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 22px;
 }
 
 .button4 {
   /*Style me! Can you add a shadow to this button? Maybe play around with the shadow properties, as well? You can even color the shadow, make it bigger or smaller, ... */
+  box-shadow: 2px 3px;
 }
 
 /* Feel free to play around with other properties, as well. */
