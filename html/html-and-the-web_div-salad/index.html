@@ -12,41 +12,51 @@ Let's fix this mess!
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../../css-basics/style.css" />
   </head>
-  <!--someone forgot to wrap the content of our webpage with an HTML element,
-	which one was it again?-->
-  <div>
-    <div>
-      <div>Jane Doe</div>
-      <!--Which elements could be used to link to parts of the webpage,
-		which appear below?-->
-      <div id="nav">
-        <div>About Me</div>
-        <div>Contact</div>
-        <div>Skillset</div>
-      </div>
-    </div>
-    <!--Looks like the following part is the central content of our webpage.-->
-    <div>
-      <div id="about-me">
-        <div>About me</div>
-        <div>
+
+  <!-- Added body tag -->
+  <body>
+    <header>
+      <h1 style="text-align: center">Jane Doe's Page</h1>
+
+      <!-- nav tag added -->
+      <nav id="nav" style="background-color: black">
+        <ul style="color: white">
+          <li>About Me</li>
+          <li>Contact</li>
+          <li>Skillset</li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main tag added -->
+    <main>
+      <section>
+        <h2 id="about-me">About me</h2>
+        <p>
           Hi there! Welcome to my personal website. Here is gathered the most
           important information about me. If you want to work with me or get to
           know me, please don't hesitate to get in contact.
-        </div>
-        <!--What element could be used to combine an image with a descriptive caption?-->
-        <div>
+        </p>
+        <!-- figure and figurecuption was added -->
+        <figure>
           <img
             src="https://source.unsplash.com/random/400x300?fruit"
             alt="a random picture"
           />
-          <div>
+          <figcaption>
             A random picture, because I would like to maintain my privacy and
             let my code speak for me, instead of images.
-          </div>
-        </div>
-      </div>
+          </figcaption>
+        </figure>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <!-- anchor link was added -->
+        <a href="https://github.com/neuefische">GitHub</a>
+        <a href="https://de.linkedin.com/">LinkedIn</a>
+        <a href="https://codesandbox.io/">CodeSandbox</a>
+      </section>
 
+<<<<<<< HEAD
       <div id="contact">
         <div>Contact</div>
         <!--When clicking on these element, nothing happens! But I want to be redirected to the other websites. Why is it not working?-->
@@ -69,4 +79,21 @@ Let's fix this mess!
       </div>
     </div>
   </div>
+=======
+      <section id="skills">
+        <h2>Skillset</h2>
+        <!-- ul and li tags added -->
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Painting rainbows</li>
+          <li>Party</li>
+        </ul>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+>>>>>>> html-div-salad
 </html>
