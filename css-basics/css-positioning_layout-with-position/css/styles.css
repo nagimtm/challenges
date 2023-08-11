@@ -51,7 +51,8 @@ body {
 
 /**
  *
- * Define the card as reference frame for descendant elements, that require absolute positioning.
+ * Define the card as reference frame for descendant elements, 
+ that require absolute positioning.
  */
 .card {
   margin: 20px 10%;
@@ -59,6 +60,7 @@ body {
   padding: 3% 10%;
   scroll-margin-top: 100px;
   border-radius: 2rem;
+  position: relative;
 }
 
 .card__heading {
