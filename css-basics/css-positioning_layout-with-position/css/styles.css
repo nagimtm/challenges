@@ -25,6 +25,7 @@ body {
   padding: 10px;
   position: sticky;
   top: 0px;
+  z-index: 1;
 }
 
 .header__text {
@@ -102,4 +103,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: sticky;
+  left: 0;
+  bottom: 100px;
 }
