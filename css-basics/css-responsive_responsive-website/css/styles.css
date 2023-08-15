@@ -152,6 +152,7 @@ fairly essential to completing this challenge. */
   align-items: center;
   gap: var(--gap);
   flex-direction: column;
+  /* flex-wrap: wrap; */
 }
 
 /* Product Card + Backgrounds */
@@ -243,11 +244,200 @@ CSS when certain conditions that we declare are met - such as a certain viewport
 width, etc. */
 
 /* Media Query Tablet */
-/* --- */
-/* Replace this comment with your media query. */
-/* --- */
+@media only screen and (max-width: 768px) {
+  .card-section {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    gap: var(--gap);
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  /* Product Card + Backgrounds */
+  /* .product-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 250px;
+    font-size: 1.5rem;
+    box-shadow: 0px 0px 10px 0px var(--inky-black);
+  } */
+
+  .--forest {
+    background-image: url("../img/forest.jpg");
+    background-size: cover;
+    width: 47%;
+  }
+
+  .intro-text {
+    color: var(--dark-beige);
+    font-size: var(--regular-text);
+    line-height: var(--regular-text-line-height);
+    width: 47%;
+    align-self: baseline;
+  }
+
+  .--mountain {
+    background-image: url("../img/mountain.jpg");
+    background-size: cover;
+    width: 47%;
+  }
+
+  .--river {
+    background-image: url("../img/river.jpg");
+    background-size: cover;
+    width: 47%;
+  }
+
+  .--ocean {
+    background-image: url("../img/ocean.jpg");
+    background-size: cover;
+    width: 47%;
+  }
+
+  .--desert {
+    background-image: url("../img/desert.jpg");
+    background-size: cover;
+    width: 47%;
+  }
+
+  .card-title {
+    padding: calc(var(--gap) / 4);
+    text-decoration: none;
+    color: var(--eggshell-white);
+    background-color: var(--inky-black);
+  }
+}
 
 /* Media Query Desktop */
-/* --- */
-/* Replace this comment with your media query. */
-/* --- */
+@media only screen and (min-width: 992px) {
+  :root {
+    /* Color Variables */
+
+    --inky-black: #0d070a;
+    --forest-green: #48594d;
+    --navy-blue: #253b40;
+    --dark-beige: #a69665;
+    --rust-orange: #bf754b;
+    --eggshell-white: #f0e2c4;
+
+    /* Unit Variables*/
+
+    --gap: 4px;
+
+    --header-brand: 4rem;
+    --header-brand-line-height: 7rem;
+
+    --header-text: 1.5rem;
+    --header-text-line-height: 2rem;
+
+    --regular-text: 1rem;
+    --regular-line-height: 1.5rem;
+
+    /* Calculations */
+
+    /* Calculating the header height */
+    --header-height: calc(
+      var(--header-brand-line-height) + var(--header-text-line-height) +
+        (3 * var(--gap))
+    );
+
+    /* Calculating the nav height */
+    --nav-height: calc(var(--regular-line-height) + (2 * var(--gap)));
+
+    /* Calculating the exact margin required to put the main content
+      right under the header and nav*/
+    --main-content-margin-top: calc(var(--header-height) + var(--nav-height));
+  }
+
+  body {
+    font-family: system-ui;
+    background-color: var(--forest-green);
+    margin: 0 20%;
+    /* display: flex;
+    justify-content: center; */
+    height: 100vh;
+  }
+
+  .main-header {
+    position: fixed;
+    top: 0;
+    width: 60%;
+    background-color: var(--navy-blue);
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: var(--header-height);
+    width: 60%;
+    background-color: var(--dark-beige);
+  }
+
+  .card-section {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    gap: var(--gap);
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+
+  .product-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 250px;
+    font-size: 1.5rem;
+    box-shadow: 0px 0px 10px 0px var(--inky-black);
+  }
+
+  .--forest {
+    background-image: url("../img/forest.jpg");
+    background-size: cover;
+    width: 99.6%;
+    margin-top: -2.5%;
+    margin-bottom: 2.5%;
+    align-self: center;
+  }
+
+  .intro-text {
+    color: var(--dark-beige);
+    font-size: var(--regular-text);
+    line-height: var(--regular-text-line-height);
+    width: 70%;
+  }
+
+  .--mountain {
+    background-image: url("../img/mountain.jpg");
+    background-size: cover;
+  }
+
+  .--river {
+    background-image: url("../img/river.jpg");
+    background-size: cover;
+  }
+
+  .--ocean {
+    background-image: url("../img/ocean.jpg");
+    background-size: cover;
+  }
+
+  .--desert {
+    background-image: url("../img/desert.jpg");
+    background-size: cover;
+  }
+
+  .main-footer {
+    display: flex;
+    gap: var(--gap);
+    background: var(--inky-black);
+    padding: var(--gap);
+    width: 100%;
+  }
+}
