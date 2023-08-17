@@ -15,4 +15,5 @@ let totalCost = mealAmount + tipAmount;
 const text = "The total cost of your bill is: ";
 const currency = " euros.";
 
+// Printing total cost with printing text.
 console.log(text + totalCost + currency);
