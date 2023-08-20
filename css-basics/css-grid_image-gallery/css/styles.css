@@ -26,14 +26,9 @@ body {
   min-width: 40rem;
   min-height: 80vh;
   margin-top: 5vh;
-
-  /* Add styles to the grid container */
   display: grid;
-  gap: 5px;
-  grid-template-columns: repeat(2, 350px);
-  grid-template-rows: repeat(2, 1fr);
-  justify-content: space-around;
-  align-items: normal;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 .teaser-grid__teaser {
