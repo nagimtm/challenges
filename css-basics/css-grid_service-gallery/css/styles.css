@@ -23,11 +23,10 @@ body {
   max-width: 900px;
   padding: 2rem;
   margin: auto;
-
   /* Add styles to the container */
   display: grid;
-  grid-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
 }
 
 .services__item {
