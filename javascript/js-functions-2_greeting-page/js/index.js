@@ -24,10 +24,33 @@ const display = document.querySelector('[data-js="display"]');
 
 function getGreeting() {
   // Code here
+  let time = new Date().getHours();
+  // let time = 23;
+  if (time >= 6 && time <= 12) {
+    return (display.textContent = "Good Morning");
+  } else if (time >= 13 && time <= 18) {
+    return (display.textContent = "Good Afternoon");
+  } else if (time >= 19 && time <= 22) {
+    return (display.textContent = "Good Evening");
+  }
+  return (display.textContent = "Good Night");
 }
 
 function getDayColor() {
   // Code here
+  let getDay = new Date().getDay();
+  if (getDay == 1) {
+    return "darkgray";
+  } else if (
+    getDay == 2 ||
+    getDay == 2 ||
+    getDay == 3 ||
+    getDay == 4 ||
+    getDay == 5
+  ) {
+    return "lightblue";
+  }
+  return "hotpink";
 }
 
 display.textContent = getGreeting();
