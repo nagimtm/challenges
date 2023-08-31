@@ -8,11 +8,14 @@ queryInput.addEventListener("input", (event) => {
   container.innerHTML = "";
 
   const searchString = event.target.value;
+  const foundCountries = countries.filter((country) =>
+    country.name.startsWith(searchString)
+  );
 
-  const foundCountry = null;
-
-  if (foundCountry) {
-    const countryElement = Country(foundCountry);
-    container.append(countryElement);
+  if (foundCountries) {
+    foundCountries.forEach((foundCountry) => {
+      const countryElement = Country(foundCountry);
+      container.append(countryElement);
+    });
   }
 });
