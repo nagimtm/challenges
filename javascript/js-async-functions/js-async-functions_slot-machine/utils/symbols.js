@@ -1,4 +1,18 @@
-export const baseSymbols = ["🍍", "🍋", "🍇", "🍒", "🍉"];
+// ["🍍", "🍋", "🍇", "🍒", "🍉"];
+// ["🎲", "🏦", "7️⃣", "🍒", "💰", "💸", "🏇", "🎱"];
+export const baseSymbols = [
+  "💲",
+  "🃏",
+  "🍒",
+  "7️⃣",
+  "🤑",
+  "🎲",
+  "🍋",
+  "🍀",
+  "💰",
+  "🍇",
+  "💵",
+];
 
 export function getMaxCount(symbols) {
   // Count the number of times each symbol appears
