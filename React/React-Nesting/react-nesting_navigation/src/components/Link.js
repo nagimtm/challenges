@@ -1,7 +1,9 @@
-export function Link({ children }) {
+export function Link({ hrefLink, children }) {
   return (
-    <a className="navigation__link" href={children}>
-      {children}
-    </a>
+    <>
+      <a className="navigation__link" href={hrefLink}>
+        {children}
+      </a>
+    </>
   );
 }

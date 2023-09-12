@@ -1,9 +1,12 @@
 import { Image } from "./Image";
-import logo from "./img/logo.jpg";
+import logo from "../img/logo.jpg";
+
 export function Logo() {
   return (
-    <a href="#">
-      <Image src={logo} />
-    </a>
+    <>
+      <a href="#">
+        <Image imgSrc={logo} />
+      </a>
+    </>
   );
 }

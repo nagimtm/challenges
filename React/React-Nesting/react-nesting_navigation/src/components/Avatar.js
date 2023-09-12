@@ -1,13 +1,16 @@
 import { Image } from "./Image";
-import { avatar } from "./img/avatar.jpg";
+import avatar from "../img/avatar.jpg";
+
 export function Avatar() {
   return (
-    <button
-      type="button"
-      onClick={() => console.log("I could toggle a profile!")}
-      aria-label="toggle profile"
-    >
-      <Image src={avatar} />
-    </button>
+    <>
+      <button
+        type="button"
+        onClick={() => console.log("I could toggle a profile!")}
+        aria-label="toggle profile"
+      >
+        <Image imgSrc={avatar} />
+      </button>
+    </>
   );
 }

@@ -1,3 +1,3 @@
-export function Image({ src }) {
-  return <img className="round-image" src={src} alt="avatar" />;
+export function Image({ imgSrc }) {
+  return <img className="round-image" src={imgSrc} alt="avatar" />;
 }
