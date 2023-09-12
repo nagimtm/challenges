@@ -1,3 +1,5 @@
+// import { countries } from "../../utils/countries.js";
+
 export function Country(props) {
   const countryElement = document.createElement("li");
   countryElement.className = "country";
