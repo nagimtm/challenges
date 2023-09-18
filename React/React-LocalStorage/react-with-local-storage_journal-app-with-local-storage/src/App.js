@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import "./App.css";
 import EntriesSection from "./components/EntriesSection";
 import EntryForm from "./components/EntryForm";
@@ -43,7 +42,7 @@ function App() {
   });
   const [filter, setFilter] = useLocalStorageState("filter", {
     defaultValue: "all",
-  }); //useState("all"); // "all" or "favorites"
+  });
 
   function handleAddEntry(newEntry) {
     const date = new Date().toLocaleDateString("en-us", {
