@@ -6,7 +6,6 @@ export default async function handler(request, response) {
   await dbConnect();
   if (request.method === "GET") {
     const products = await Product.find();
-    console.log(products);
     return response.status(200).json(products);
   }
 }
