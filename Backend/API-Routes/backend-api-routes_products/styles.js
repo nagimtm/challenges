@@ -8,7 +8,8 @@ export default createGlobalStyle`
   }
 
   body {
-    margin: 0;
+    margin: auto ;
     font-family: system-ui;
   }
-`;
+  
+  `;
