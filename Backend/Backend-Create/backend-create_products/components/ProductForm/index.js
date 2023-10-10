@@ -18,10 +18,10 @@ export default function ProductForm() {
     });
 
     if (response.ok) {
+      event.target.reset();
+      event.target.name.focus();
       mutate();
     }
-    event.target.reset();
-    event.target.name.focus();
   }
 
   return (
