@@ -22,12 +22,12 @@ test("The server responds to /api/fish/2 with Anemonefish", async () => {
 
 test("The server responds to /api/fish/3 with Not found", async () => {
   const response = server && (await request(server).get("/api/fish/3"));
-  expect(response?.text).toBe("Not found");
+  expect(response?.text).toBe("Page not found.");
   expect(response?.statusCode).toBe(404);
 });
 
 test("The server responds to all other routes with Not found", async () => {
   const response = server && (await request(server).get("/api/elephant"));
-  expect(response?.text).toBe("Not found");
+  expect(response?.text).toBe("Page not found.");
   expect(response?.statusCode).toBe(404);
 });
